@@ -179,7 +179,7 @@ public class Main {
         double yearlyIncreaseKristina = (newKristinaSalary - kristinaSalary) * 12;
 
         System.out.println("Маша теперь получает " + (int)newMashasSalary + " рублей. Годовой доход вырос на " + (int)yearlyIncreaseMasha + " рублей.");
-        System.out.println("Денис теперь получает " + (int)newDenisSalary + " рублей. Годовой доход вырос на " + (int)yearlyIncreaseDenis + " рублей.");
+        System.out.println("Денис теперь получает  " + (int)newDenisSalary + " рублей. Годовой доход вырос на " + (int)yearlyIncreaseDenis + " рублей.");
         System.out.println("Кристина теперь получает " + (int)newKristinaSalary + " рублей. Годовой доход вырос на " + (int)yearlyIncreaseKristina + " рублей.");
     }
 
