@@ -181,6 +181,90 @@ public class Main {
         System.out.println("Маша теперь получает " + (int)newMashasSalary + " рублей. Годовой доход вырос на " + (int)yearlyIncreaseMasha + " рублей.");
         System.out.println("Денис теперь получает  " + (int)newDenisSalary + " рублей. Годовой доход вырос на " + (int)yearlyIncreaseDenis + " рублей.");
         System.out.println("Кристина теперь получает " + (int)newKristinaSalary + " рублей. Годовой доход вырос на " + (int)yearlyIncreaseKristina + " рублей.");
-    }
 
-}
+        System.out.println("Домашнее задание 3");
+
+        System.out.println("Задача 1");
+        int age = 15;
+
+        if (age >= 18) {
+           System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний");
+        }
+        else {
+            System.out.println("Если возраст человека равен " + age + ", то он не совершеннолетний");
+        }
+
+        System.out.println("Задача 2");
+        int weather = 3;
+        if (weather  <= 5 ){
+            System.out.println("На улице " + weather + " градуса, нужно надеть шапку.");
+        }
+        else {
+            System.out.println("На улице " + weather + " градусов, можно идти без шапки.");
+        }
+
+        System.out.println("Задача 3");
+        int carSpeed = 61;
+        if ( carSpeed < 60 ) {
+            System.out.println("Если скорость машины "+ carSpeed + "км в час можно ездить спокойно");
+        }
+        else {
+            System.out.println("Если скорость машины "+ carSpeed + "км в час придется заплатить штраф");
+        }
+
+        System.out.println("Задача 4");
+        int ages = 20;
+        if (ages >= 2 && ages <= 6){
+            System.out.println("Если возраст человека равен " + ages + " то ему нужно ходить в детский сад");
+        }
+        else if (ages >= 7 && ages <= 17){
+            System.out.println("Если возраст человека равен " + ages + " то ему нужно ходить в школу");
+        }
+        else if (ages >= 18 && ages <= 24) {
+            System.out.println("Если возраст человека равен " + ages + " то его место в университете");
+        }
+        else if (ages > 24) {
+            System.out.println("Если возраст человека равен " + ages + " то ему пора ходить на работу");
+        }
+
+        System.out.println("Задача 5");
+        int ageOfTheChild = 15;
+        if (ageOfTheChild < 5 ) {
+            System.out.println("Если возраст ребенка равен " + ageOfTheChild + " то он не может кататься на аттракционе");
+        }
+        else if( ageOfTheChild >5 && ageOfTheChild < 14 ){
+            System.out.println("Если возраст ребенка равен " + ageOfTheChild + "  то он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя.");
+        }
+        else if (ageOfTheChild > 14){
+            System.out.println("Если возраст ребенка равен " + ageOfTheChild + " то он может кататься без сопровождения взрослого");
+        }
+
+        System.out.println("Задача 6");
+        int totalCapacity = 120;
+        int seating = 60;
+        int occupiedSeats = 59;
+        if ( occupiedSeats < 60) {
+            System.out.println("В вагоне есть сидячее место");
+        }
+        else if (occupiedSeats > 60 && occupiedSeats < 120){
+            System.out.println("В вагоне есть стоячее место");
+        }
+        else if (occupiedSeats >= 120) {
+            System.out.println("В вагоне нет свободных мест");
+        }
+
+        System.out.println("Задача 7");
+        int one1 = 57;
+        int two2 = 6789;
+        int three3 = 230;
+        int max;
+        if (one1 >= two2 && one1 >= three3) {
+            max = one1;
+        } else if (two2 >= one1 && two2 >= three3) {
+            max = two2;
+        } else {
+            max = three3;
+        }
+        System.out.println("Наибольшее число: " + max);
+                                            }
+                    }
