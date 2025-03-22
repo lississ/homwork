@@ -270,10 +270,10 @@ public class Main {
         System.out.println("Задача 2");
         System.out.println("Задача 2");
         int clientDeviceYear = 2015; // год выпуска устройства
-        int clientOS = 1; // 0 - iOS, 1 - Android
+        int clientOs = 1; // 0 - iOS, 1 - Android
 
         boolean isOldDevice = clientDeviceYear < 2015;
-        String osType = (clientOS == 0) ? "iOS" : "Android";
+        String osType = (clientOs == 0) ? "iOS" : "Android";
         String version = isOldDevice ? "облегченную версию" : "версию";
 
         System.out.println("Установите " + version + " приложения для " + osType + " по ссылке");
@@ -337,5 +337,72 @@ public class Main {
 
             }
         }
+        System.out.println("Домашнее задание 5");
+        System.out.println("Задача 1");
+        for ( int i = 0; i <= 10; i++){
+            System.out.println( i );
+        }
+
+        System.out.println("Задача 2");
+        for ( int i = 10; i >= 0; i--){
+            System.out.println( i );
+        }
+
+        System.out.println("Задача 3");
+        for ( int i = 0; i <= 17; i = i + 2){
+            System.out.println( i );
+        }
+
+        System.out.println("Задача 4");
+        for ( int i = 10; i >= - 10; i--){
+            System.out.println( i );
+        }
+
+        System.out.println("Задача 5");
+        for ( int i = 1904; i <= 2096; i = i + 4){
+            System.out.println( i + " год является високосным");
+        }
+
+        System.out.println("Задача 6");
+        for ( int i = 0; i <= 98; i = i + 7){
+            System.out.println( i );
+        }
+
+        System.out.println("Задача 7");
+        for ( int i = 1; i <= 512; i = i * 2){
+            System.out.println( i );
+        }
+
+        System.out.println("Задача 8");
+        int accruals = 29000;
+        int moneybox = 0;
+        for (int i = 0; i <= 12; i++){
+            moneybox = moneybox + accruals;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + moneybox + " рублей");
+        }
+
+        System.out.println("Задача 9");
+        int money = 29000;
+        int deposit = 0;
+        for (int i = 0; i <= 12; i++){
+            deposit = deposit + deposit/100;
+            deposit = deposit + money;
+            System.out.println("Месяц " + i + " сумма накоплений равна " +  deposit + " рублей");
+        }
+
+        System.out.println("Задача 10");
+        int answer = 0;
+        for (int i = 1; i <=10; i++ ){
+            answer = answer + 2;
+            System.out.println( "2*" + i + "="+  answer );
+        }
+
+
+
+
+
+
+
+
     }
 }
