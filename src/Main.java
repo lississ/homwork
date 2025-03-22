@@ -91,22 +91,22 @@ public class Main {
         byte ekaterina = 30;
         int totalStudents = ludmila + anna + ekaterina;
         short totalSheets = 480;
-        int sheetForOne = totalSheets / totalStudents;
-        System.out.println("Каждому ученику достанется " + sheetForOne + " листов бумаги");
+        int sheetForOne = totalSheets / totalStudents ;
+        System.out.println("Каждому ученику достанется " +sheetForOne + " листов бумаги");
 
         System.out.println("Задача 4");
         System.out.println("Дано: Производительность машины для изготовления бутылок — 16 бутылок за 2 минуты");
         byte bottles = 16;
-        int minute = bottles / 2;
+        int minute = bottles / 2 ;
         // за... произвела
-        int productivityTwentyMinutes = minute * 20;
+        int productivityTwentyMinutes = minute *  20;
         int productivityDay = minute * 1440;
         int productivityThreeDays = productivityDay * 3;
         int productivityMonth = productivityDay * 30;
 
-        System.out.println("За 20 минут машина произвела " + productivityTwentyMinutes + " бутылок");
+        System.out.println("За 20 минут машина произвела "+ productivityTwentyMinutes +" бутылок" );
         System.out.println("За сутки машина произвела " + productivityDay + " бутылок");
-        System.out.println("За трое суток машина произвела" + productivityThreeDays + " бутылок");
+        System.out.println("За трое суток машина произвела"+ productivityThreeDays + " бутылок");
         System.out.println("За месяц машина произвела" + productivityMonth + " бутылок");
 
         System.out.println("Задача 5");
@@ -117,7 +117,7 @@ public class Main {
         int numClasses = totalCans / totalPerClass;
         int whiteCans = whitePerClass * numClasses;
         int brownCans = brownPerClass * numClasses;
-        System.out.println("В школе, где " + numClasses + " классов, нужно " + whiteCans + " банок белой краски и " + brownCans + " банок коричневой краски");
+        System.out.println("В школе, где " + numClasses + " классов, нужно "+ whiteCans + " банок белой краски и " + brownCans + " банок коричневой краски" );
 
         System.out.println("Задача 6");
         //Дано
@@ -178,164 +178,9 @@ public class Main {
         double yearlyIncreaseDenis = (newDenisSalary - denisSalary) * 12;
         double yearlyIncreaseKristina = (newKristinaSalary - kristinaSalary) * 12;
 
-        System.out.println("Маша теперь получает " + (int) newMashasSalary + " рублей. Годовой доход вырос на " + (int) yearlyIncreaseMasha + " рублей.");
-        System.out.println("Денис теперь получает  " + (int) newDenisSalary + " рублей. Годовой доход вырос на " + (int) yearlyIncreaseDenis + " рублей.");
-        System.out.println("Кристина теперь получает " + (int) newKristinaSalary + " рублей. Годовой доход вырос на " + (int) yearlyIncreaseKristina + " рублей.");
-
-        System.out.println("Домашнее задание 3");
-
-        System.out.println("Задача 1");
-        int age = 15;
-
-        if (age >= 18) {
-            System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний");
-        } else {
-            System.out.println("Если возраст человека равен " + age + ", то он не совершеннолетний");
-        }
-
-        System.out.println("Задача 2");
-        int weather = 3;
-        if (weather <= 5) {
-            System.out.println("На улице " + weather + " градуса, нужно надеть шапку.");
-        } else {
-            System.out.println("На улице " + weather + " градусов, можно идти без шапки.");
-        }
-
-        System.out.println("Задача 3");
-        int carSpeed = 61;
-        if (carSpeed < 60) {
-            System.out.println("Если скорость машины " + carSpeed + "км в час можно ездить спокойно");
-        } else {
-            System.out.println("Если скорость машины " + carSpeed + "км в час придется заплатить штраф");
-        }
-
-        System.out.println("Задача 4");
-        int ages = 20;
-        if (ages >= 2 && ages <= 6) {
-            System.out.println("Если возраст человека равен " + ages + " то ему нужно ходить в детский сад");
-        } else if (ages >= 7 && ages <= 17) {
-            System.out.println("Если возраст человека равен " + ages + " то ему нужно ходить в школу");
-        } else if (ages >= 18 && ages <= 24) {
-            System.out.println("Если возраст человека равен " + ages + " то его место в университете");
-        } else if (ages > 24) {
-            System.out.println("Если возраст человека равен " + ages + " то ему пора ходить на работу");
-        }
-
-        System.out.println("Задача 5");
-        int ageOfTheChild = 15;
-        if (ageOfTheChild < 5) {
-            System.out.println("Если возраст ребенка равен " + ageOfTheChild + " то он не может кататься на аттракционе");
-        } else if (ageOfTheChild > 5 && ageOfTheChild < 14) {
-            System.out.println("Если возраст ребенка равен " + ageOfTheChild + "  то он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя.");
-        } else if (ageOfTheChild > 14) {
-            System.out.println("Если возраст ребенка равен " + ageOfTheChild + " то он может кататься без сопровождения взрослого");
-        }
-
-        System.out.println("Задача 6");
-        int totalCapacity = 120;
-        int seating = 60;
-        int occupiedSeats = 59;
-        if (occupiedSeats < 60) {
-            System.out.println("В вагоне есть сидячее место");
-        } else if (occupiedSeats > 60 && occupiedSeats < 120) {
-            System.out.println("В вагоне есть стоячее место");
-        } else if (occupiedSeats >= 120) {
-            System.out.println("В вагоне нет свободных мест");
-        }
-
-        System.out.println("Задача 7");
-        int one1 = 57;
-        int two2 = 6789;
-        int three3 = 230;
-        int max;
-        if (one1 >= two2 && one1 >= three3) {
-            max = one1;
-        } else if (two2 >= one1 && two2 >= three3) {
-            max = two2;
-        } else {
-            max = three3;
-        }
-        System.out.println("Наибольшее число: " + max);
-
-        System.out.println("Домашнее задание 4");
-
-        System.out.println("Задача 1");
-        int clientOS = 0; // 0 — iOS, 1 — Android
-        if (clientOS == 0) {
-            System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (clientOS == 1) {
-            System.out.println("Установите версию приложения для Android по ссылке");
-        }
-
-        System.out.println("Задача 2");
-        System.out.println("Задача 2");
-        int clientDeviceYear = 2015; // год выпуска устройства
-        int clientOS = 1; // 0 - iOS, 1 - Android
-
-        boolean isOldDevice = clientDeviceYear < 2015;
-        String osType = (clientOS == 0) ? "iOS" : "Android";
-        String version = isOldDevice ? "облегченную версию" : "версию";
-
-        System.out.println("Установите " + version + " приложения для " + osType + " по ссылке");
-
-
-        System.out.println("Задача 3");
-        int year = 2022;
-        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-            System.out.println(year + " год является високосным");
-        } else {
-            System.out.println(year + " год не является високосным");
-        }
-
-        System.out.println("Задача 4");
-        int deliveryDistance = 95; // дистанция до клиента
-        int deliveryTime;
-        if (deliveryDistance <= 20) {
-            deliveryTime = 1;
-        } else if (deliveryDistance <= 60) {
-            deliveryTime = 2;
-        } else if (deliveryDistance <= 100) {
-            deliveryTime = 3;
-        } else {
-            deliveryTime = 0;
-            System.out.println("Доставка невозможна");
-        }
-        if (deliveryTime > 0) {
-            System.out.println("Потребуется дней: " + deliveryTime);
-        }
-
-        System.out.println("Задача 5");
-        int monthNumber = 12; // Номер месяца
-
-        if (monthNumber < 1 || monthNumber > 12) {
-            System.out.println("Некорректный номер месяца");
-        } else {
-            switch (monthNumber) {
-                case 12:
-                case 1:
-                case 2:
-                    System.out.println("Зима");
-                    break;
-                case 3:
-                case 4:
-                case 5:
-                    System.out.println("Весна");
-                    break;
-                case 6:
-                case 7:
-                case 8:
-                    System.out.println("Лето");
-                    break;
-                case 9:
-                case 10:
-                case 11:
-                    System.out.println("Осень");
-                    break;
-                default:
-                    System.out.println("Некорректный номер месяца");
-                    break;
-
-            }
-        }
+        System.out.println("Маша теперь получает " + (int)newMashasSalary + " рублей. Годовой доход вырос на " + (int)yearlyIncreaseMasha + " рублей.");
+        System.out.println("Денис теперь получает  " + (int)newDenisSalary + " рублей. Годовой доход вырос на " + (int)yearlyIncreaseDenis + " рублей.");
+        System.out.println("Кристина теперь получает " + (int)newKristinaSalary + " рублей. Годовой доход вырос на " + (int)yearlyIncreaseKristina + " рублей.");
     }
+
 }
