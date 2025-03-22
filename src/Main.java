@@ -376,7 +376,7 @@ public class Main {
         System.out.println("Задача 8");
         int accruals = 29000;
         int moneybox = 0;
-        for (int i = 0; i <= 12; i++){
+        for (int i = 0; i <= 11; i++){
             moneybox = moneybox + accruals;
             System.out.println("Месяц " + i + " сумма накоплений равна " + moneybox + " рублей");
         }
