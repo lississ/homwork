@@ -338,6 +338,7 @@ public class Main {
             }
         }
         System.out.println( " Домашнее задание 5 ");
+
         System.out.println("Задача 1");
         for ( int i = 0; i <= 10; i++){
             System.out.println( i );
@@ -376,7 +377,7 @@ public class Main {
         System.out.println("Задача 8");
         int accruals = 29000;
         int moneybox = 0;
-        for (int i = 0; i <= 11; i++){
+        for (int i = 0; i <= 11; i++) {
             moneybox = moneybox + accruals;
             System.out.println("Месяц " + i + " сумма накоплений равна " + moneybox + " рублей");
         }
@@ -395,7 +396,73 @@ public class Main {
         for (int i = 1; i <=10; i++ ){
             answer = answer + 2;
             System.out.println( "2*" + i + "="+  answer );
+        }
 
+        System.out.println( " Домашнее задание 5 ");
+
+        System.out.println("Задача 1");
+        int cash = 0;
+        int month = 0;
+        while (cash <= 2_459_000){
+            cash = cash + 15_000;
+            month++;
+            System.out.println("Месяц "+ month + ", сумма накоплений равна "+ cash + "рублей");
+        }
+
+        System.out.println("Задача 2");
+        int q = 1;
+        while (q <= 10) {
+            System.out.print(q + " ");
+            q++;
+        }
+        System.out.println(); // Переход на новую строку
+        for (int j = 10; j >= 1; j--) {
+            System.out.print(j + " ");
+        }
+
+        System.out.println();
+        System.out.println("Задача 3");
+        int population = 12_000_000;
+        int birthRate = 17; // рождаемость на 1000 человек
+        int deathRate = 8;  // смертность на 1000 человек
+        int years = 10;
+
+        for (int yearr = 1; yearr <= years; yearr++) {
+            int births = (population * birthRate) / 1000;
+            int deaths = (population * deathRate) / 1000;
+            population += births - deaths;
+
+            System.out.println("Год " + yearr + ", численность населения составляет " + population);
+        }
+
+        System.out.println("Задача 4");
+        double depossit = 15_000; // начальная сумма депозита
+        int currentMonth = 1; // текущий месяц
+        double interestRate = 0.07; // процентная ставка (7% в виде дроби)
+
+        while (depossit < 12_000_000) {
+            depossit = depossit + depossit * interestRate; // добавляем 7% к сумме
+            depossit = depossit + 15_000; // добавляем 15 000 рублей каждый месяц
+            System.out.println("Месяц " + currentMonth + ", сумма накоплений равна " + depossit + " рублей");
+            currentMonth++; // увеличиваем номер месяца
+        }
+
+        System.out.println("Задача 7");
+        int firstFriday = 3; // 3-е число месяца — первая пятница
+        int daysInMonth = 31;
+
+        for (int day = firstFriday; day <= daysInMonth; day += 7) {
+            System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет.");
+        }
+
+        System.out.println("Задача 8");
+        int startYear = 1824; // 200 лет назад от 2024
+        int endYear = 2124; // 100 лет вперед от 2024
+
+        for (int y = startYear; y <= endYear; y++) {
+            if (y % 79 == 0) {
+                System.out.println(y);
+            }
         }
     }
 }
