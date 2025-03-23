@@ -337,7 +337,7 @@ public class Main {
 
             }
         }
-        System.out.println( " Домашнее задание 5 ");
+        System.out.println( " Домашнее задание 5");
 
         System.out.println("Задача 1");
         for ( int i = 0; i <= 10; i++){
