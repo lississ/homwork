@@ -398,7 +398,7 @@ public class Main {
             System.out.println( "2*" + i + "="+  answer );
         }
 
-        System.out.println( " Домашнее задание 5 ");
+        System.out.println( " Домашнее задание 6 ");
 
         System.out.println("Задача 1");
         int cash = 0;
@@ -443,7 +443,7 @@ public class Main {
         while (depossit < 12_000_000) {
             depossit = depossit + depossit * interestRate; // добавляем 7% к сумме
             depossit = depossit + 15_000; // добавляем 15 000 рублей каждый месяц
-            System.out.println("Месяц " + currentMonth + ", сумма накоплений равна " + depossit + " рублей");
+            System.out.println("Месяц " + currentMonth + ", сумма накоплений равна " +  String.format("%.3f",depossit) + " рублей");
             currentMonth++; // увеличиваем номер месяца
         }
 
